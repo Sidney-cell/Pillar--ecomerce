@@ -3,16 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Dashboard | Pillar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+    }
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+      background: #111827;
+      color: #fff;
+      position: fixed;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: #c7d2fe;
+      text-decoration: none;
+      margin: 12px 0;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+    .content {
+      margin-left: 240px;
+      padding: 30px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Painel do Lojista</h1>
 
-  <nav>
-    <a href="produtos.html">Produtos</a> |
-    <a href="pedidos.html">Pedidos</a> |
+  <div class="sidebar">
+    <h2>Pillar</h2>
+    <a href="#">Visão geral</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="pedidos.html">Pedidos</a>
     <a href="configuracoes.html">Configurações</a>
-  </nav>
+    <a href="../index.html">Sair</a>
+  </div>
 
-  <p>Bem-vindo ao painel da sua loja.</p>
+  <div class="content">
+    <h1>Dashboard</h1>
+
+    <div class="card">
+      <h3>Status da loja</h3>
+      <p>Sua loja está ativa e pronta para vendas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Resumo rápido</h3>
+      <ul>
+        <li>Produtos cadastrados: 0</li>
+        <li>Pedidos hoje: 0</li>
+        <li>Faturamento: R$ 0,00</li>
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
